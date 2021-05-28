@@ -1,6 +1,10 @@
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+html,
+body {
     height: 100%;
     margin: 0;
+    font-family: 'Crimson Text', serif;
 }
 
 nav {
@@ -13,14 +17,15 @@ nav {
     justify-content: space-between;
 }
 
-.top-logo {
-    max-width: 200px;
-}
-
 .no-style-list {
-    list-style:none;
+    list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.top-logo {
+    max-width: 200px;
+    padding: 0 1em;
 }
 
 .top-nav {
@@ -28,6 +33,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: stretch;
+    padding: 0 1em;
 }
 
 .top-nav li {
@@ -38,7 +44,8 @@ nav {
     margin-right: 0;
 }
 
-.main-search, .register {
+.main-search,
+.register {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,4 +57,10 @@ footer {
     height: 250px;
     background-color: #000;
     color: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+
+footer div {
+    margin: 1em;
 }
